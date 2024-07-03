@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-nav {
+    width: 100px;
+  }
+  
+  .name-logo {
+    margin-top: 0px; 
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  li {
+    margin-left: 20px; 
+  }
