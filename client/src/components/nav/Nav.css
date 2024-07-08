@@ -1,6 +1,7 @@
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
   
   .logo-name {
@@ -10,21 +11,21 @@ nav {
   }
   
   .logo-nav {
-    width: 100px;
-  }
-  
-  .name-logo {
-    margin-top: 0px; 
-    text-align: center;
+    width: 130px;
   }
   
   ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
+    margin-right: 5%;
   }
   
   li {
-    margin-left: 20px; 
+    margin-left: 40px; 
+    cursor: pointer;
+  }
+
+  li:hover{
+    color: #5286EE;
+    font-weight: bold;
   }

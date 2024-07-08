@@ -4,12 +4,12 @@ import '../nav/Nav.css';
 const Nav = () => {
   return (
     <nav>
-        <div className='logo-name'>
         <img className='logo-nav' src={logo} alt="logo" />
-        <h3 className='name-logo'>WebPymes</h3>
-        </div>
         <ul>
-        <li>Inicio</li>
+        <li>Servicios</li>
+        <li>Proyectos</li>
+        <li>Nuestro Equipo</li>
+        <li>Contacta con nosotros</li>
       </ul>
     </nav>
   )
