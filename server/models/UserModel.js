@@ -21,6 +21,9 @@ const UsersModel = connection_db.define('users', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    image: {
+        type: DataTypes.STRING,
+    },
     role: {
         type: DataTypes.STRING,
         defaultValue : 'user',

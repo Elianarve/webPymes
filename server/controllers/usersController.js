@@ -23,10 +23,8 @@ export const deleteUser = async (req, res) => {
 
 export const createdUser = async (req, res) => {
     try {
-        const hashedPassword = await bcrypt.hash(req.body.password, 10);
-        req.body.password = hashedPassword;
-        const createdNewUser = await UserModel.create(req.body)       
-        res.status(201).json(createdNewUser);
+        const createdUser = await UserModel.create(req.body)       
+        res.status(201).json(createdUser);
     }catch(error){
         return res.status(500).send({ error: 'Internal Server Error' });
     }
@@ -35,8 +33,6 @@ export const createdUser = async (req, res) => {
 export const updateUser = async (req, res) => {   
     const userId = req.params.id;
     try {
-        const hashedPassword = await bcrypt.hash(req.body.password, 10);
-        req.body.password = hashedPassword;
         await UserModel.update(req.body,{  where: {id: userId}});
         res.status(200).json({message: ` Users: ${userId}, Successfully updated`});
     } catch(error) {
