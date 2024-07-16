@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useId } from 'react';
 import { useUserContext } from '../../context/UserContext';
-// import { registerUser } from '../../services/auth';
-// import * as Yup from 'yup';
+import { registerUser } from '../../services/auth';
+
 
 const RegisterForm = () => {
     const [name, setName] = useState('');
