@@ -2,6 +2,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 1.25em;
   }
   
   .logo-name {
@@ -12,6 +13,7 @@ nav {
   
   .logo-nav {
     width: 130px;
+    margin: 1.25em;
   }
   
   ul {

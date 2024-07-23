@@ -4,16 +4,17 @@ const CardNews = () => {
   return (
     <section className='card-news'>
         <div className='img-card-news'>
-            <img src="https://via.placeholder.com/150" alt="news" />
+            <img src={news.image} alt="news" />
         </div>
         <div className="user-card-news">
-            <h3 className='user-card-news-name'>John Doe</h3>
-            <date>12/12/2021</date>
-            <img src="https://via.placeholder.com/50" alt="user" />
+            <h3 className='user-card-news-name'>{user.title}</h3>
+            <date className='date-news'>{news.date}</date>
+            <img src={user.image} alt="user" />
 
         </div>
         <article className="text-short-card-news">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id metus ac mi tincidunt ultricies nec nec nunc. Nullam id metus ac mi tincidunt ultricies nec nec nunc.</p>
+            <h1>{news.title}</h1>
+            <p>{news.description}</p>
         </article>
     </section>
 

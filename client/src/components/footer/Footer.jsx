@@ -5,23 +5,18 @@ const Footer = () => {
   return (
     <footer className="footer">
         <div className='rrss-logos'>
-            <img 
-            className='rrss-instagram' 
-            src= '../../src/assets/icons/Instagram.svg' 
-            a href='https://www.instagram.com/webspymes/'>
-            </img>
+           
+            <a href="https://www.instagram.com/webspymes/">
+                <img src= '../../src/assets/icons/Instagram.svg'></img>
+            </a>
 
-            <img     
-            className='rrss-tiktok' 
-            src="../../src/assets/icons/TikTok.svg" 
-            a href="https://www.tiktok.com/@webspymes/">
-            </img>
+            <a href="https://www.tiktok.com/@webspymes/">
+                <img src="../../src/assets/icons/TikTok.svg" ></img>
+            </a>
 
-            <img 
-            className='rrss-linkedin'
-            src="../../src/assets/icons/LinkedIn.svg"
-            a href="https://www.linkedin.com/company/webspymes-es/">
-            </img>
+            <a href="https://www.linkedin.com/company/webspymes-es/">
+                <img src="../../src/assets/icons/LinkedIn.svg"></img>
+            </a>
         </div>
 
         <div className='copyright'>
