@@ -13,16 +13,13 @@ const Home = () => {
     <>
     <section className='container-img'>
       <motion.div
-      
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
       className='container-text'>
         <h1>Diseño Web, Apps, UX/UI y SEO</h1>
-        
         <h2>Impulsa tu negocio en Internet con nuestros servicios integrales de diseño web, SEO y gestión de redes sociales. Aumenta tus ventas y haz crecer tu negocio con WebsPymes.</h2> 
         <h2> Creemos que hacer webs es relativamente sencillo, pero el objetivo fundamental de nuestro trabajo es dar soluciones y para ello es preciso conocer los negocios y a las personas que están detrás de ellos.</h2>
-       
       </motion.div>
       <motion.img 
         src='../src/assets/img/backgroundweb4.jpg'
@@ -95,22 +92,17 @@ const Home = () => {
           <a href='https://www.linkedin.com/in/fatimacosme/'>Contacto</a>
         </div>
       </article>
-        
         <p style={{
           marginTop:'4em', 
           marginBottom:'1.7em', 
           fontSize:'2.1em', 
           lineHeight: 1.75}}
           >Para nosotras es fundamental conocer las demandas de cada cliente y asi, podremos dar con la solución más óptima para cada caso. Creemos que hacer webs es relativamente sencillo, pero el objetivo fundamental de nuestro trabajo es dar soluciones y para ello es preciso conocer los negocios y a las personas que están detrás de ellos.</p>
-        
       </article>
-      
     </section>
 
     <section className='container-contact' style={{marginTop:'10em', marginBottom:'20em'}}>
-
       <ButtomContact/>
-
     </section>
     </>
   )
