@@ -1,9 +1,9 @@
-import { Outlet, Navigate } from "react-router-dom";
-import { useUserContext } from "../../context/UserContext";
-import Nav from "../nav/Nav";
-import Footer from "../footer/footer";
+import { Outlet, Navigate } from 'react-router-dom';
+import { useUserContext } from '../context/UserContext';
+import Nav from '../components/nav/Nav';
+import Footer from '../components/footer/Footer';
 
-const LayoutPrivate = () => {  
+const LayoutPrivate = () => {
   const { userAuth } = useUserContext();
 
   return (
@@ -16,7 +16,7 @@ const LayoutPrivate = () => {
           </main>
           <Footer />
         </>
-      ) : ( 
+      ) : (
         <Navigate to="/" />
       )}
     </>

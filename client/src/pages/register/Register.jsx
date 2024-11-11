@@ -1,19 +1,10 @@
-import RegisterForm from '../components/forms/RegisterForm';
-import { Link } from 'react-router-dom';
 import React from 'react';
+import RegisterForm from './RegisterForm';
+import { useUserContext } from '../../context/UserContext';
+const Register = () => {
+  const { onRegister } = useUserContext();
 
-const Register = () => { 
- return (
-  React.createElement(React.Fragment, null, 
-    React.createElement("div", { className: "flex items-center justify-center min-h-screen bg-neutral-900" }, 
-      React.createElement("div", { className: "text-center" }, 
-        React.createElement(Link, { to: "/" }, 
-        ), 
-        React.createElement(RegisterForm, null)
-      )
-    )
-  )
- );
-}
+  return <RegisterForm onRegister={onRegister} />;
+};
 
 export default Register;
